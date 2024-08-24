@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Kredas Infra</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/login.component.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" />
+    <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
+    <style>
+        /* Add custom styles here if needed */
+    </style>
+</head>
+<body>
+
+    
+    <!---------------header--------------->
+    <header class="main_header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/mr-manthra-logo-2.png" alt="logo" /></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="main_nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu dropdown-menu-columns" aria-labelledby="servicesDropdown">
+                                <div class="d-flex flex-wrap">
+                                    <div class="column p-3">
+                                        <h6>Infra Finance</h6>
+                                        <a class="dropdown-item" href="#">House Purchase </a>
+                                        <a class="dropdown-item" href="#">House Finance</a>
+                                        <a class="dropdown-item" href="#">Plot Purchase</a>
+                                        <a class="dropdown-item" href="#">Flat Purchase</a>
+                                        <a class="dropdown-item" href="#">Commercial Property</a>
+                                        <a class="dropdown-item" href="#">House Construction</a>
+                                        <a class="dropdown-item" href="#">House Renovation</a>
+                                        <a class="dropdown-item" href="#">Top-Up(House, Plot, Flat)</a>
+                                    </div>
+                                    <div class="column p-3">
+                                        <h6>Professional Service</h6>
+                                        <a class="dropdown-item" href="#">Architectural Service</a>
+                                        <a class="dropdown-item" href="#">Interior Designing</a>
+                                        <a class="dropdown-item" href="#">Muncipal Approvals</a>
+                                        <a class="dropdown-item" href="#">Floor Approvals</a>
+                                        <a class="dropdown-item" href="#">PMC(Project Management Consultancy)</a>
+                                        <a class="dropdown-item" href="#">Landscape Consultation</a>
+                                        <a class="dropdown-item" href="#">Project Supervision</a>
+                                        <a class="dropdown-item" href="#">Project Execution</a>
+                                    </div>
+                                    <div class="column p-3">
+                                        <h6>Skilled Services</h6>
+                                        <a class="dropdown-item" href="#">Building Construction</a>
+                                        <a class="dropdown-item" href="#">Interior Work</a>
+                                        <a class="dropdown-item" href="#">Landscape Contract</a>
+                                        <a class="dropdown-item" href="#">Renovation Works</a>
+                                        <a class="dropdown-item" href="#">Building Demolition Works</a>
+                                        <a class="dropdown-item" href="#">Venture Development Work</a>
+                                        <a class="dropdown-item" href="#">Maintenace Works</a>
+                                        <a class="dropdown-item" href="#">AMC</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <div class="dropdown-menu dropdown-menu-columns" aria-labelledby="productsDropdown">
+                                <div class="d-flex flex-wrap">
+                                    <div class="column p-3">
+                                        <a class="dropdown-item" href="#">Cement</a>
+                                        <a class="dropdown-item" href="#">Steel</a>
+                                        <a class="dropdown-item" href="#">Doors and Windows</a>
+                                        <a class="dropdown-item" href="#">Electricals</a>
+                                    </div>
+                                    <div class="column p-3">
+                                        <a class="dropdown-item" href="#">Hardware</a>
+                                        <a class="dropdown-item" href="#">Paints and Putty</a>
+                                        <a class="dropdown-item" href="#">Walls and Floors</a>
+                                        <a class="dropdown-item" href="#">Sanitary Ware</a>
+                                    </div>
+                                    <div class="column p-3">
+                                        <a class="dropdown-item" href="#">Tile Adhesive & Grout</a>
+                                        <a class="dropdown-item" href="#">Pipes and Tanks</a>
+                                        <a class="dropdown-item" href="#">Plywood & Boards</a>
+                                        <a class="dropdown-item" href="#">Safety Equipments</a>
+                                        <a class="dropdown-item" href="#">Sand and Bricks</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="signupDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Signup</a>
+                            <ul class="dropdown-menu" aria-labelledby="signupDropdown">
+                                <li><a class="dropdown-item" href="FranchiseRegistration.aspx">Franchise </a></li>
+                                <li><a class="dropdown-item" href="BusinessAssociateRegistration.aspx">Executive </a></li>
+                                <li><a class="dropdown-item" href="ServicePartnerRegistration.aspx">Service Partner</a></li>
+                                <li><a class="dropdown-item" href="ProductPartnerRegistration.aspx">Inventory Partner</a></li>
+                                <li><a class="dropdown-item" href="UserRegistration.aspx">User</a></li>
+                                <li><a class="dropdown-item" href="LoginForm.aspx">login</a></li>
+                            </ul>
+                        </li>
+                        <!--<li class="nav-item">
+                          <a class="nav-link" href="#"><img src="images/search-icon.png" alt="search icon" /></a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+<!-- card part -->
+    <div class="box-bg container-fluid">
+        <div class="row box-bg">
+            <div class="container-fluid mb-5">
+                <div class="row mb-5">
+                  <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5">
+                    <div class="card-nga">
+                      <h1 class="h5 card-header text-center py-4">
+                        <p class="franchise"><strong>FRANCHISE  REGISTRATION</strong></p>
+                        <!-- <i class="fas fa-sign-in-alt me-4"></i><strong>Franchise Registration</strong> -->
+                      </h1>
+                      <div class="card-body px-lg-5 pt-4">
+                        <form>
+                 
+<ol>
+                       
+                       <div class="row">
+                           
+                                <label class="labels1">Franchise Type <span class="star_required">*</span></label>
+                                
+            
+                                <select name="FranchiseType"  class="form-control form-control-sm label_franchise " onchange="javascript:setTimeout('__doPostBack(\'FranchiseType_ddl\',\'\')', 0)" id="FranchiseType">
+                                    <option selected="selected" value="Select Franchise Type" class="type">Select Franchise Type</option>
+                                    <option value="State">State</option>
+                                    <option value="District">District</option>
+                                    <option value="Area">Area</option>
+                               
+                                 </select>
+                            
+                        </div>
+            
+          
+                 
+            
+            
+                        <div class="row">
+                            <label class="labels">User Name  <span class="star_required">*</span> </label>
+                               <div class="form-floating1">
+                                    <input type="User-Name" class="form-control form-control-sm label_user" formControlName="username" id="username"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->  
+                        </div>
+            
+            
+            
+            
+                        <div class="row">
+                                <label class="labels">Password <span class="star_required">*</span></label>
+                                <div class="form-floating1">
+                                    <input type="password" class="form-control form-control-sm label_pass" formControlName="password" id="password"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                        </div>
+            
+            
+            
+            
+                        <div class="row">
+                               <label class="labels">Confirm Password <span class="star_required">*</span></label>
+                                <div class="form-floating1">
+                                    <input type="confirm-Password" class="form-control form-control-sm label_pass" formControlName="confirm-Password" id="confirm-Password"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                            </div>
+            
+            
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="labels">First Name <span class="star_required">*</span></label>
+                                
+                           
+            
+                        
+                                <div class="form-floating2">
+                                    <input type="First-Name" class="form-control form-control-sm label_first" formControlName="First-Name" id="First-Name"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                                </div>
+            
+                                <div class="col-md-6">
+                                    
+                           
+                                <label class="labels2">Last  Name<span class="star_required">*</span></label>
+                                
+                                 <div class="form-floating3">  
+                                    <input type="Last-Name" class="form-control form-control-sm label_last" formControlName="Last-Name" id="Last-Name"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                                </div>
+                        </div>
+            
+            
+                    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="labels">Mobile Number<span class="star_required">*</span></label>
+                           
+            
+                        
+                                <div class="form-floating2">
+                                    <input type="Mobile_number" class="form-control form-control-sm label_first" formControlName="Mobile_number" id="Mobile_number"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                                </div>
+            
+                                <div class="col-md-6">
+                                    
+                           
+                                <label class="labels2">Alternate Mobile Number<span class="star_required">*</span></label>
+                                
+                                 <div class="form-floating3">  
+                                    <input type="Alternate_mobile_number" class="form-control form-control-sm label_last" formControlName="Alternate_mobile_number" id="Alternate_mobile_number"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                                </div>
+                        </div>
+            
+            
+            
+            
+                        <div class="row">
+                            <label class="labels">Email <span class="star_required">*</span></label>
+                            <div class="form-floating1">
+                                <input type="Email" class="form-control form-control-sm label_email" formControlName="password" id="password"
+                                placeholder="">
+                              <!-- <label for="floatingInput"></label> -->
+                            </div>
+                    </div>
+                       
+            
+            
+            
+            
+                      
+                        <div class="row">
+                          <label class="labels" >State<span class="star_required">*</span></label>
+                          <select name="State_ddl"  class="form-control form-control-sm label_state" onchange="javascript:setTimeout('__doPostBack(\'State_ddl\',\'\')', 0)" id="State_ddl">
+                              <option selected="selected" value="Select a State">Select a State</option>
+                              <option value="Andhra Pradesh">Andhra Pradesh</option>
+                              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                              <option value="Assam">Assam</option>
+                              <option value="Bihar">Bihar</option>
+                              <option value="Chhattisgarh">Chhattisgarh</option>
+                              <option value="Chandigarh">Chandigarh</option>
+                              <option value="Dadra and Nagar Haveli and Daman &amp; Diu">Dadra and Nagar Haveli and Daman &amp; Diu</option>
+                              <option value="Delhi">Delhi</option>
+                              <option value="Goa">Goa</option>
+                              <option value="Gujarat">Gujarat</option>
+                              <option value="Haryana">Haryana</option>
+                              <option value="Himachal Pradesh">Himachal Pradesh</option>
+                              <option value="Jammu &amp; Kasmir">Jammu &amp; Kasmir</option>
+                              <option value="Jharkhand">Jharkhand</option>
+                              <option value="Karnataka">Karnataka</option>
+                              <option value="Kerala">Kerala</option>
+                              <option value="Ladakh">Ladakh</option>
+                              <option value="Lakshadweep">Lakshadweep</option>
+                              <option value="Madhya Pradesh">Madhya Pradesh</option>
+                              <option value="Maharashtra">Maharashtra</option>
+                              <option value="Manipur">Manipur</option>
+                              <option value="Meghalaya">Meghalaya</option>
+                              <option value="Mizoram">Mizoram</option>
+                              <option value="Nagaland">Nagaland</option>
+                              <option value="Odisha">Odisha</option>
+                              <option value="Puducherry">Puducherry</option>
+                              <option value="Punjab">Punjab</option>
+                              <option value="Rajasthan">Rajasthan</option>
+                              <option value="Sikkim">Sikkim</option>
+                              <option value="Tamil Nadu">Tamil Nadu</option>
+                              <option value="Telangana">Telangana</option>
+                              <option value="Tripura">Tripura</option>
+                              <option value="Uttar Pradesh">Uttar Pradesh</option>
+                              <option value="Uttarakhand">Uttarakhand</option>
+                              <option value="West Bengal">West Bengal</option>
+                      
+                          </select>
+                     
+                  </div>
+                       
+            
+            
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="labels1">District <span class="star_required">*</span></label>
+                                <select name="district_ddl"  class="form-control form-control-sm label_district" onchange="javascript:setTimeout('__doPostBack(\'district_ddl\',\'\')', 0)" id="district_ddl">
+                                  <option selected="selected" value="Select a District">Select a District</option>
+                                    <option value="SPSR NELLORE">SPSR NELLORE</option>
+                                    <option value="TIRUPATHI">TIRUPATHI</option>
+                                    <option value="GUNTUR">GUNTUR</option>
+                                    <option value="NTR">NTR</option>
+                                    <option value="VISAKHAPATNAM">VISAKHAPATNAM</option>
+                                    <option value="YSR KADAPA">YSR KADAPA</option>
+                                    <option value="NORTH GODAVARI">NORTH GODAVARI</option>
+                                    <option value="MEDCHAL">MEDCHAL</option>
+                                    <option value="SHAMIRPET">SHAMIRPET</option>
+                                    <option value="CHITTOR">CHITTOR</option>
+                                    <option value="ANNAMAYYA">ANNAMAYYA</option>
+                                    <option value="AN">AN</option>
+                                    <option value="PRAKASAM">PRAKASAM</option>
+                                    <option value="ANANTAPUR">ANANTAPUR</option>
+                                    <option value="WEST GODAVARI">WEST GODAVARI</option>
+                                </select>
+                           </div>
+                    
+            
+                        
+                            
+            
+            
+            
+                            <div class="col-md-6">
+                                <label class="labels3">Area <span class="star_required">*</span></label>
+                                
+            
+                            
+                                <div class="form-floating4">
+                                    <input type="Area" class="form-control form-control-sm label_last" formControlName="Area" id="Area"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="row">
+                                <label class="labels">Address<span class="star_required">*</span></label>
+                                <div class="form-floating4">   
+                                    <textarea name="Address_txt" rows="2" cols="20" id="Address_txt" class="form-control form-control-sm label_email" formControlName="Address" id="Address"
+                                    
+                                    placeholder=""></textarea>
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                        </div>
+            
+                         
+            
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="labels">LandMark<span class="star_required">*</span></label>
+                                <div class="form-floating2">
+                                    <input type="landmark" class="form-control form-control-sm label_first" formControlName="landmark" id="landmark"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                                </div>
+                                <div class="col-md-6">
+                                <label class="labels2">Pin Code <span class="star_required">*</span></label>
+                                 <div class="form-floating3">  
+                                    <input type="pincode" class="form-control form-control-sm label_last" formControlName="pincode" id="pincode"
+                                    placeholder="">
+                                  <!-- <label for="floatingInput"></label> -->
+                                </div>
+                                </div>
+                        </div>
+            
+            
+            
+            
+                        
+                    
+            
+            
+                        
+                        
+            
+                        <div class="row">
+                              <label class="labels1">Refered By  <span class="star_required">*</span></label>
+                                <select name="Refferedby" class="form-control form-control-sm label_reffer" id="Refferedby">
+                                  <option selected="selected" value="Reffered_by">Reffered by</option>
+                                  <option value="company">Company</option>
+                                  <option value="Social-Media">Social Media</option>
+                                  <option value="Coordinator">Coordinator</option>
+                             
+                                </select>
+                       </div>
+                        
+                        
+                     <div class="row">
+                        <div class="col-md-6">
+                            <label class="labels">GST Number</label>
+                            <!-- <span class="star_required">*</span> -->
+                            <div class="form-floating4">
+                                <input type="GST-Number" class="form-control form-control-sm label_first" formControlName="GST-Number" id="GST-Number"
+                                placeholder="">
+                              <!-- <label for="floatingInput"></label> -->
+                            </div>
+                        </div>
+                  
+                        
+                        
+            
+                        
+                            <div class="col-md-6">
+                                <label class="labels4">Upload GST Certificate</label>
+                               
+                                    <input type="file" name="GSTCertificateFileUploadControl" id="GSTCertificateFileUploadControl" accept=".png,.jpg,.jpeg,.gif,.pdf">
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="row">
+                            
+                 
+                            <div class="col-md">
+                                <input id="Accept_chk"  class="label_box" type="checkbox" name="Accept_chk" onclick="javascript:setTimeout('__doPostBack(\'Accept_chk\',\'\')', 0)">
+                                <label class="label_text">I have read and agree with the  <a href="#">terms and conditions</a></label>
+            
+                            </div>
+                            
+                        </div>
+            
+            
+            
+                        <div class="payment label_pay">
+                            <div col-md>
+                                <div class="pay"> PAYMENT INFORMATION</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="labels">Amount Paid </label>
+                               
+                           
+                                <div class="form-floating5">
+                                    <input type="Amount-Paid" class="form-control form-control-sm label_paid" formControlName="Amount-Paid" id="Amount-Paid"
+                                    placeholder="">
+                                  
+                                </div>
+                            </div>
+                       
+                                 <div class="col-md-5">
+                          
+                           
+                                    <input type="file" name="Screenshot" id="Screenshot" accept=".png,.jpg,.jpeg,.gif,.pdf" class="screen">
+                                    
+                                 
+                            </div>
+                        </div>
+            
+            
+                        <div class="row">
+                            <div class="col-md">
+                                <label>Please Upload the Screenshot of your payment receipt/screenshort here.Accepted Formats are pdf,jpeg,png,etc</label>
+                            </div>
+                        </div>
+                        
+            
+            
+                        <!-- <div class="row">
+                            <input type="submit" name="Register_btn" value="Register" id="Register_btn" disabled="disabled" class="Register">
+                        </div> -->
+                          
+            
+                       
+                       
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input type="submit" name="Register_btn" value="REGISTER" id="Register_btn" class="button">
+                                 </div>
+                               
+                        </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                    </ol>
+            
+            
+            
+            
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+
+
+
+
+
+
+
+
+
+
+           
+            </div>
+        </div>
+    </div>
+    
+
+   
+
+   
+
+    
+
+    
+
+
+    <!---------------footer_section--------------->
+
+    <section class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="logo">
+                        <img src="images/mr-manthra-final_foot.png" alt="footer logo" />
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 ">
+                    <div class="footer_about">
+                        <h4>Corporate Office</h4>
+                        <div class="addresss">
+                            <p>
+                                Flat No. 203, 2nd Floor,
+                                Sri Sai Orchid, East Block,
+                                Vithal Rao Nagar, Madhapur,
+                                Hyderabad – 500 081
+                                Telangana
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-xs-6">
+                    <div class="footer_about pl-2">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="terms&conditions.html">Terms of Services</a>
+                            </li>
+                            <li>
+                                <a href="privacy_policies.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="contactus.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                        <h4>Contact Number</h4>
+                        <ul>
+                            <li>
+                                <a href="#">+91 9010881819</a>
+                            </li>
+                        </ul>
+                        <h4>Email</h4>
+                        <ul>
+                            <li>
+                                <a href="mailto:info@mrmanthra.com">info@mrmanthra.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="footer_about">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Infrastructure</a>
+                            </li>
+                            <li>
+                                <a href="#">Architecture</a>
+                            </li>
+                            <li>
+                                <a href="#">Interior Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Infra Finance</a>
+                            </li>
+                            <li>
+                                <a href="#">Construction</a>
+                            </li>
+                            <li>
+                                <a href="#">Landscape</a>
+                            </li>
+                            <li>
+                                <a href="#">Realty Development</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="footer_about">
+                        <h4>Newsletter</h4>
+                        <form class="newsletter_form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Enter your Email" class="form-control" />
+                                <button type="button" class="btn btn-sm btn-primary">Sign Up</button>
+                            </div>
+                        </form>
+                        <div class="social_div">
+                            <a href="https://www.facebook.com/people/Kredas-Infra/pfbid02nfNpkGz87VCMthXi36Fj2jygyoj9jPeYJEBqMXqUuGDqRHdCPrkcfCy3LUTwTSwpl/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/i/flow/login?redirect_after_login=%2FKREDAS_INFRA"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/kredasinfra/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 copyright_col">
+                    <div class="copyright_div">
+                        <div class="copyright_content">
+                            <p>&copy; 2024 - <span>MR MANTHRA SOLUTIONS INDIA PVT. LTD.</span> All Rights Reserved.</p>
+                            <p>Powered By <a href="https://www.mrmanthra.com" target="_blank">www.mrmanthra.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="js/script.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.nav-item.dropdown .nav-link').on('click', function (e) {
+            e.preventDefault();
+            var $dropdownMenu = $(this).next('.dropdown-menu');
+            if ($dropdownMenu.is(':visible')) {
+                $dropdownMenu.slideUp();
+            } else {
+                $('.dropdown-menu').slideUp();
+                $dropdownMenu.slideDown();
+            }
+        });
+
+        // Close dropdown menu if clicked outside
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.nav-item.dropdown').length) {
+                $('.dropdown-menu').slideUp();
+            }
+        });
+    });
+</script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/chart.js/dist/Chart.min.js"></script>
+<script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5NXz9eVnyJOA81wimI8WYE08kW_JMe8g&callback=initMap" async defer></script>
+<script src="js/off-canvas.js"></script>
+<script src="js/hoverable-collapse.js"></script>
+<script src="js/misc.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/maps.js"></script>
+</html>
